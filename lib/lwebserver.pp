@@ -479,7 +479,7 @@ begin
   begin
     lOutput := TSimpleCGIOutput.Create(ARequest.Socket);
     lOutput.FDocumentRoot := FFileHandler.DocumentRoot;
-    {$IF FPC_FULLVERSION < 32000}
+    {$IF FPC_FULLVERSION < 30200}
     lOutput.Process.CommandLine := FAppName;
     {$ELSE}
     lOutput.Process.Executable := FAppName;
