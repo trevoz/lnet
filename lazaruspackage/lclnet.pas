@@ -80,5 +80,13 @@ implementation
   {$i lclgtkeventer.inc} // identical code ;)
 {$endif}
 
+{$ifdef LCLQT5}
+{$i lclgtkeventer.inc} // identical code ;)
+{$endif}
+
+{$ifdef LCLCOCOA}
+{$i lclgtkeventer.inc} // identical code ;)
+{$endif}
+
 end.
 
